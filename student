@@ -1,0 +1,31 @@
+import java.util.*;
+class info
+{ String name;
+  String usn;
+  double cgpa;
+  
+  public void details(String x,String y,double z)
+ {  name=x;
+    usn=y;
+    cgpa=z;
+    
+  
+ 
+ System.out.println("name :"+name+"\nusn :"+usn+"\ncgpa="+cgpa);
+ }
+}
+class student
+{ public static void main(String args[])
+  { Scanner s=new Scanner(System.in);
+    info a1=new info();
+   System.out.println("enter name");
+   String x=s.next();
+   System.out.println("enter usn");
+   String y=s.next();
+    System.out.println("cgpa");
+   int z=s.nextInt();
+  a1.details(x,y,z);
+  }
+}
+   
+   
